@@ -1,5 +1,5 @@
-import css from './Notification.module.css'
+import css from './Notification.module.css'; 
 
 export const Notification = ({ message }) => (
-  <p className={css.notification}>{message}</p>  
+  <p className={css.notification__title}>{message}</p>    
 );    

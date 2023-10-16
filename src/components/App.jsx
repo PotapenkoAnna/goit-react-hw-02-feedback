@@ -7,7 +7,7 @@ import { Statistics } from './Statistics/Statistics';
 export class App extends Component {
 
   state = {
-    good: 0,
+    good: 0, 
     neutral: 0,
     bad: 0
   }
@@ -32,18 +32,9 @@ export class App extends Component {
     const positiveFeedback = this.countPositiveFeedbackPercentage();
 
     return (
-      <div
-        style={{
-          height: '100vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          fontSize: 40,
-          color: '#010101'
-        }}
-      >
+      <div> 
         <Section title='Please leave feedback'>
-          <FeedbackOptions
+          <FeedbackOptions 
             options={this.state}
             onLeaveFeedback={this.leaveFeedback}
           />
@@ -60,6 +51,6 @@ export class App extends Component {
           />
         )}
      </div>
-    ); 
+    );
   } 
 }
