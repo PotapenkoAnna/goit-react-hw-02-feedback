@@ -2,7 +2,7 @@ import css from './FeedbackOptions.module.css'
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     return (
-        <div className={css.feedback__container}> 
+        <div className={css.feedback__container}>  
             {Object.keys(options).map(option => (
                 <button    
                     key={option}
